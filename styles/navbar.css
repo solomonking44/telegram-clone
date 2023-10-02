@@ -1,0 +1,12 @@
+@import "variables.css";
+nav.custom-navbar {
+    background-color: var(--title-blue) !important;
+}
+
+#navbar {
+    background-color: var(--primary);
+}
+
+#text {
+    -webkit-app-region: drag;
+}

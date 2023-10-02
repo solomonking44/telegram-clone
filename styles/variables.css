@@ -1,0 +1,15 @@
+:root {
+    /* colors */
+    --title-blue: #293241;
+    --primary: #0e1621;
+    --secondary: #1b242f;
+    --selected: #457b9d;
+    --white: #ffffff;
+    --grey: #808080;
+    /* hover colors */
+    --secondary-hover: #748294;
+    /* avator metrics */
+    --avator-height: 3.0rem;
+    --avator-width: 3.0rem;
+    --avator-border-radius: 3.0rem;
+}

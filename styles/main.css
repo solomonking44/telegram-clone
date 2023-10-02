@@ -1,0 +1,75 @@
+@import "variables.css";
+body {
+    font-size: 1em;
+}
+
+input.custom-search {
+    background-color: var(--title-blue);
+    /* border-radius: 1rem; */
+    border: 0;
+    height: 1.5rem;
+    border: 0;
+    color: var(--white);
+    width: 10rem;
+    /* max-width: 20rem; */
+}
+
+#left-div {
+    background-color: var(--secondary) !important;
+}
+
+#avator {
+    height: var(--avator-height);
+    width: var(--avator-width);
+    border-radius: var(--avator-border-radius);
+}
+
+.chat :hover {
+    background-color: var(--secondary-hover);
+}
+
+#content {
+    background-color: var(--primary) !important;
+}
+
+.bubble {
+    background-color: var(--secondary);
+    border-radius: 1rem;
+}
+
+.small {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+
+
+/* .custom-search :active {
+    border: 0;
+} */
+
+.custom-search::placeholder {
+    /* font-size: 0.8rem; */
+    color: var(--grey);
+}
+
+.round-div {
+    background-color: var(--title-blue);
+    border-radius: 1rem;
+    height: 0.5rem;
+    padding: 1rem;
+    border: 1px;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+
+/* .custom-nav {
+    background-color: var(--title-blue);
+} */
+
+
+/* #chat {
+    background-color: var(--secondary);
+} */

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/variables.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="styles/navbar.css" type="text/css">
+    <title>Home</title>
+</head>
+
+<body oncontextmenu="return false">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="custom.js"></script>
+
+    <!-- title bar -->
+    <nav class="custom-navbar" id="navbar">
+        <div class="container-fluid mb-0">
+            <div class="w-100">
+                <ul class="list-unstyled d-flex justify-content-sm-between align-items-center py-0 mb-0">
+                    <small id="text" class="text-white "></small>
+                    <ul class="list-unstyled d-flex justify-sm-evenly align-items-center">
+                        <li class="nav-item py-0 ">
+                            <a class="nav-link py-0" href="" id="minimize">
+                                <i class="fa-regular fa-window-minimize fa-xs text-secondary"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4  ">
+                            <a class="nav-link py-0" href="" id="expand">
+                                <i class="fa-regular fa-square fa-xs text-secondary"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4  ">
+                            <a class="nav-link py-0" href="" id="close">
+                                <i class="fa-solid fa-xmark fa-xs text-secondary"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div id="content">
+        <div style="height: 96vh;" class="container-fluid pl-0 ms-0">
+            <div class="row h-100">
+
+                <!-- left div -->
+                <div class="col-md-4" id="left-div">
+
+                    <!-- left div navbar -->
+                    <div class="custom-nav py-2">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-auto" id="toggler">
+                                <i class="fa-solid fa-bars fa-lg" style="color: #808080;"></i>
+                            </div>
+                            <div class="col-auto">
+                                <form action="#" method="post">
+                                    <div class="round-div d-flex align-items-center w-100 justify-content-center">
+                                        <input type="text" class="form-control custom-search p-1" placeholder="Search" name="search_contact" id="search_contact">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- chat list -->
+                    <div class="chats">
+                        <div class="chat" id="chat">
+                            <div class="row py-2">
+                                <!-- chat image -->
+                                <div class="col-auto">
+                                    <div class="photo">
+                                        <img src="images/avator.png" class="img-thumbnail img-rounded" alt="image here" id="avator">
+                                    </div>
+                                </div>
+
+                                <!-- chat details -->
+                                <div class="col-auto">
+                                    <div class="name">
+                                        <small class="text-white fw-bold">Name</small>
+                                    </div>
+                                    <div class="last_message">
+                                        <small class="text-secondary">Hello world</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- chats -->
+                <div class="col-md-8 nopadding" id="chat_window" style="height: 500px;">
+
+                    <!-- floating text -->
+                    <div class="d-flex h-100 align-items-center justify-content-center " id="bubble">
+                        <div class="bubble d-flex align-items-center justify-content-center">
+                            <small class="text-white small">Select a chat to start messaging</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
