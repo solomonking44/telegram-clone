@@ -24,5 +24,36 @@ $(document).ready(() => {
         $("#bubble").removeClass("justify-content-center");
         $("#bubble").removeClass("align-items-center");
         $("#chat_window").height(0);
+        $("#message").focus();
     })
+
+    $("#message-form").on("submit", (e) => {
+        e.preventDefault();
+        alert("Form has been submitted");
+        console.log("The work is done!");
+    })
+
+
+
+    // API BUSINESS
+    // const express = require("express")
+    // const app = express()
+
+    // app.post('/send', (req, res) => {
+    //     response = {
+    //         name: req.body.message
+    //     }
+
+    //     // res.end(JSON.stringify(response))
+    //     // res.send("POSTED!!!")
+    //     res.end("POST")
+    // })
+
+    // app.listen(port, () => {
+    //     console.log(`Application running on port ${port}`);
+    // })
+
+    // $("#message-form").submit(() => {
+    //     e.preventDefault();
+    //     console.log("Form submitted");
 })

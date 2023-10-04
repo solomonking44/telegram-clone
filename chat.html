@@ -1,5 +1,5 @@
 <div class="chat-div">
-    <nav class="navbar navbar-dark bg-dark bg-body-tertiary">
+    <nav class="navbar navbar-dark bg-dark ">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <a class="navbar-brand" href="#">Navbar</a>
             <ul class="nav me-auto mb-2 mb-lg-0">
@@ -31,24 +31,27 @@
 
     <!-- chat content -->
     <div class="chat-content">
-        Chat Content
+        <div class="container-fluid">
+            Chat Content
+        </div>
     </div>
 
     <!-- chat buttons -->
-    <div class="chat-buttons fixed-bottom">
+    <div class="chat-buttons">
         <div class="container-fluid">
-            <form action="#" method="POST" id="message-form">
-                <div class="row">
+            <div class="row">
+                <form method="POST" id="message-form">
                     <div class="col-auto ">
-                        <input type="text" name="message" id="message" class="form-control">
+                        <input type="text" name="message" placeholder="Type message here..." id="message" class="form-control">
                     </div>
                     <div class="col-auto ">
                         <button type="submit" class="btn btn-secondary">
-                        <i class="fa-solid fa-location-arrow"></i>
-                    </button>
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </button>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+
         </div>
     </div>
 </div>

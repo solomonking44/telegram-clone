@@ -5,6 +5,7 @@ nav.custom-navbar {
 
 #navbar {
     background-color: var(--primary);
+    -webkit-app-region: drag;
 }
 
 #text {
